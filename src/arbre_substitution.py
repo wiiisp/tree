@@ -48,7 +48,7 @@ class TrieSubstitution:
                 return False
         return node.is_end_of_word
 
-    # Suppression d'un mot
+    # Suppression d'un mot. Pas de substitution pour celui ci
     def delete(self, word):
         def _delete_helper(node, word, depth):
             if depth == len(word):
