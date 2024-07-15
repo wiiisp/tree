@@ -3,7 +3,7 @@ import time
 import json
 import uuid
 
-BODY = {"arbre": {"search": "diplodocus"}}
+BODY = {"arbre": {"search": "dimplodocus"}}
 
 
 class RabbitClient:

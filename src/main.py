@@ -1,7 +1,6 @@
 from arbre import Trie
 from arbre_substitution import TrieSubstitution
 from arbre_add_remove import TrieAddRemove
-from threading import Thread
 import pika
 import json
 
@@ -46,6 +45,7 @@ def handle(channel, props, arbre, data):
 def loop_rabbit():
     # Example
     # arbre = Trie()
+    # arbre = TrieAddRemove(errors=2)
     arbre = TrieSubstitution(errors=2)
     arbre.insert("diplodocus")
 
